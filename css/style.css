@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Sets the font to Arial or a default sans-serif if Arial is unavailable */
+    display: flex;
+    /* Enables flexbox layout to center the content */
+    justify-content: center;
+    /* Centers the container horizontally */
+    align-items: center;
+    /* Centers the container vertically */
+    height: 150vh;
+    /* Sets the height of the body to 100 view height */
+    margin: auto;
+    /* Removes default margin from the body */
+    background-color: white;
+    /* Sets a white background color for the page */
+}
+
+.container {
+    display: grid;
+    /* Enables grid layout for the container */
+    grid-template-columns: 1fr;
+    /* Defines a single-column grid */
+    grid-gap: 20px;
+    /* Sets a 20px gap between grid items */
+    padding: 20px;
+    /* Adds 20px padding inside the container */
+    background-color: #fff;
+    /* Sets a white background for the container */
+    border-radius: 8px;
+    /* Rounds the corners of the container with an 8px radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow around the container */
+    width: 100%;
+    /* Makes the container take up the full width of its parent */
+    max-width: 500px;
+    /* Limits the container's maximum width to 500px */
+}
+
+.calculator-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerText {
+    color: purple;
+}
+
+img {
+    width: 25%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    /* Centers the heading text */
+    margin-bottom: 20px;
+    /* Adds 20px margin below the heading */
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+}
+
+.form-group {
+    display: grid;
+    /* Enables grid layout for form groups */
+    grid-template-columns: 1fr;
+    /* Defines a single-column grid for form fields */
+    margin-bottom: 10px;
+    /* Adds 10px margin below each form group */
+}
+
+label {
+    margin-bottom: 5px;
+    /* Adds 5px margin below labels */
+    font-weight: bold;
+    /* Makes label text bold */
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    /* Adds 10px padding inside the input, select, and button elements */
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    border: 1px solid #ddd;
+    /* Adds a light gray border around the elements */
+    border-radius: 4px;
+    /* Rounds the corners of the elements with a 4px radius */
+}
+
+button {
+    background-color: orangered;
+    /* Sets the button background to a blue color */
+    color: white;
+    /* Sets the button text color to white */
+    border: none;
+    /* Removes the default border from the button */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the button */
+}
+
+button:hover {
+    background-color: grey;
+    /* Darkens the button color on hover */
+}
+
+#result {
+    font-size: 18px;
+    /* Sets the font size to 18px */
+    font-weight: bold;
+    /* Makes the text bold */
+    color: #333;
+    /* Sets the text color to a dark gray */
+}
+
+.hidden {
+    display: none;
+    /* Hides elements with this class by not displaying them */
+}
+
+#summary {
+    width: 80%;
+    margin: auto;
+}
